@@ -23,6 +23,7 @@ DashboardPage DBP;
 		LP.signinClick();
 		String url = DBP.getdashboardpageurl();
 		Assert.assertEquals(url,"https://dev.visit.ictkerala.org/homepage");
+		System.out.println("done");
 	}
 }
 
