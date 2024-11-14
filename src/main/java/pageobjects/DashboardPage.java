@@ -12,6 +12,12 @@ public class DashboardPage {
 		
 		this.driver = driver;
 	}
+	//get current url
+	public String getdashboardpageurl() throws Exception {
+		Thread.sleep(3000);
+		String url = driver.getCurrentUrl();
+		return url;
+	}
 	// addnewvisit button click
 	
 			public void addNewVisit() {
