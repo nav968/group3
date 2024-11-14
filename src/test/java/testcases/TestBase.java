@@ -21,7 +21,7 @@ import org.testng.annotations.BeforeTest;
 			prop.load(fileinp);
 
 		}
-	@BeforeTest
+	@BeforeClass
 		public void basesetup() throws IOException {
 			
 		readprop();
