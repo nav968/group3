@@ -6,7 +6,9 @@
       <class name="testcases.LoginTest">
         <methods>
           <include name="basesetup"/>
-          <include name="LoginTestValid"/>
+          <include name="TearDown"/>
+          <include name="neglogin1"/>
+          <include name="neglogin4"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
     </classes>
