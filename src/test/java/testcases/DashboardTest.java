@@ -33,7 +33,7 @@ public class DashboardTest extends TestBase {
 		DBP.purpose("Test");
 		DBP.contact("Amal (lecture)");
 		DBP.addNote("testing");
-		//obj.disc();
 		DBP.submit();
+		DBP.closeAddvisit();
 		}
 }
