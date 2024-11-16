@@ -69,6 +69,7 @@ public class DashboardPage {
 				WebElement sub = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div[9]/div/div/div[3]/button[1]"));
 				sub.click();
 			}
+			//selecting employee
 			public void addEmp(String employee) throws InterruptedException {
 				Thread.sleep(1000);
 				WebElement emp = driver.findElement(By.xpath("//div[@class=' css-19bb58m']//input[@id='react-select-9-input']"));
@@ -76,20 +77,20 @@ public class DashboardPage {
 				emp.sendKeys(employee);
 				emp.sendKeys(Keys.RETURN);
 			}
-			
+			//selecting date
 			public void addDate(String date) throws InterruptedException {	
 				//System.out.println("done...");
 				Thread.sleep(1000); 
 				WebElement da=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[4]/div/input"));
 				//WebElement da=driver.findElement(By.xpath("//input[@type='datetime-local']//input[@value='2024-12-26T20:05']"));
 			da.click();
-			
 			da.sendKeys(date);	
 				//Select dropdown=new Select(da);
 				//dropdown.selectByVisibleText("15-11-2024 50:00");
 				//da.sendKeys(date);	
 				da.sendKeys(Keys.RETURN);
 			}
+			//enter purpose of visit
 			public void purpose(String purpose) throws InterruptedException {
 				Thread.sleep(1000);
 				WebElement dat=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[5]/div/input"));
@@ -98,6 +99,7 @@ public class DashboardPage {
 				
 				dat.sendKeys(purpose);
 			}
+			//selecting contact person
 			public void contact(String person) throws InterruptedException {
 				Thread.sleep(1000);
 				WebElement cont = driver.findElement(By.xpath("//div[@class=' css-19bb58m']//input[@id='react-select-10-input']"));
@@ -105,6 +107,7 @@ public class DashboardPage {
 				cont.sendKeys(person);
 				cont.sendKeys(Keys.RETURN);	
 			}
+			//adding additional note
 			public void addNote(String notes) throws InterruptedException {
 				Thread.sleep(1000);
 				WebElement note=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[7]/div/input"));
@@ -112,18 +115,26 @@ public class DashboardPage {
 			note.click();
 				note.sendKeys(notes);	
 			}
+			//submit add visit
 			public void submit() throws InterruptedException {
 				Thread.sleep(1000);
 				WebElement adc=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[11]/button[1]"));
 				adc.click();
 				
 			}
+			//close add contact
 			public void contactPersonclose() throws InterruptedException
 			{
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//h3[text()=\"Updated Successfully\"]//parent::div//button")).click();
 			}
-			
+			//close add visit 
+			public void closeAddvisit() throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement cav=driver.findElement(By.xpath("//button[@class='text-white  hover:ring-4 font-medium rounded-lg text-base inline-flex items-center px-3 py-2.5 text-center mr-2 bg-blue-600 hover:ring-blue-300 ']"));
+				cav.click();
+
+			}		
 }
 
 
