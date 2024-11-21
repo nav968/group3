@@ -126,7 +126,7 @@ public class DashboardPage {
 			public void contactPersonclose() throws InterruptedException
 			{
 				Thread.sleep(1000);
-				driver.findElement(By.xpath("//h3[text()=\"Updated Successfully\"]//parent::div//button")).click();
+				driver.findElement(By.xpath("/html/body/div/div/div/main/div[8]/div/div[2]/button")).click();
 			}
 			//close add visit 
 			public void closeAddvisit() throws InterruptedException {
