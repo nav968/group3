@@ -1,86 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-21T22:56:41 IST" name="Default suite" finished-at="2024-11-21T22:57:12 IST" duration-ms="31116">
+  <suite started-at="2024-11-22T22:25:12 IST" name="Default suite" finished-at="2024-11-22T22:25:37 IST" duration-ms="24627">
     <groups>
     </groups>
-    <test started-at="2024-11-21T22:56:41 IST" name="Default test" finished-at="2024-11-21T22:57:12 IST" duration-ms="31116">
+    <test started-at="2024-11-22T22:25:12 IST" name="Default test" finished-at="2024-11-22T22:25:37 IST" duration-ms="24627">
       <class name="testcases.VisitLogsTest">
-        <test-method is-config="true" signature="basesetup()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-21T22:56:41 IST" name="basesetup" finished-at="2024-11-21T22:56:46 IST" duration-ms="5719" status="PASS">
+        <test-method is-config="true" signature="basesetup()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-22T22:25:13 IST" name="basesetup" finished-at="2024-11-22T22:25:23 IST" duration-ms="10540" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basesetup -->
-        <test-method signature="setinstitutionsubmit()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-21T22:56:46 IST" name="setinstitutionsubmit" finished-at="2024-11-21T22:57:11 IST" duration-ms="24808" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=131.0.6778.70)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e828df9d939fea487167f34f0d1d629d, clickElement {id=f.4EA6B24A230ACF7FFC778FD807B7352C.d.F72D9936103E9EE63D52CC8931A0AE50.e.218}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\WINTECH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12248}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12248/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e828df9d939fea487167f34f0d1d629d)] -> xpath: /html/body/div/div/div[8]/div/div/div[2]/div[3]/div[2]/button[1]]
-Session ID: e828df9d939fea487167f34f0d1d629d]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=131.0.6778.70)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e828df9d939fea487167f34f0d1d629d, clickElement {id=f.4EA6B24A230ACF7FFC778FD807B7352C.d.F72D9936103E9EE63D52CC8931A0AE50.e.218}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.70, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\WINTECH\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:12248}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:12248/devtoo..., se:cdpVersion: 131.0.6778.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (e828df9d939fea487167f34f0d1d629d)] -> xpath: /html/body/div/div/div[8]/div/div/div[2]/div[3]/div[2]/button[1]]
-Session ID: e828df9d939fea487167f34f0d1d629d
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at pageobjects.VisitLogsPage.submit(VisitLogsPage.java:79)
-at testcases.VisitLogsTest.setinstitutionsubmit(VisitLogsTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        <test-method signature="setinstitutionsubmit()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-22T22:25:23 IST" name="setinstitutionsubmit" finished-at="2024-11-22T22:25:37 IST" duration-ms="13490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setinstitutionsubmit -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-21T22:57:11 IST" name="TearDown" finished-at="2024-11-21T22:57:12 IST" duration-ms="499" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.VisitLogsTest@6cf0e0ba]" started-at="2024-11-22T22:25:37 IST" name="TearDown" finished-at="2024-11-22T22:25:37 IST" duration-ms="516" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
