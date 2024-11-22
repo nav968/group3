@@ -41,10 +41,10 @@ import org.testng.annotations.BeforeTest;
 		
 		
 	}
-@AfterMethod
-public void TearDown() {
-	driver.quit();
-}
+//@AfterMethod
+//public void TearDown() {
+//	driver.quit();
+//}
 	}
 
 
