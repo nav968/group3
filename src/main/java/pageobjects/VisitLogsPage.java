@@ -75,7 +75,7 @@ public class VisitLogsPage {
 	}
 	public void submit() throws InterruptedException {
 	Thread.sleep(1000);	
-	WebElement insubmit=driver.findElement(By.xpath("/html/body/div/div/div[8]/div/div/div[2]/div[3]/div[2]/button[1]"));	
+	WebElement insubmit=driver.findElement(By.xpath("/html/body/div/div/div[13]/div[1]/div/div[8]/button[1]"));	
 	insubmit.click();	
 	}
 }
