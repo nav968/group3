@@ -132,6 +132,7 @@ public class DashboardPage {
 			}
 			//close add visit 
 			public void closeAddvisit() throws InterruptedException {
+				//thread
 				Thread.sleep(1000);
 				WebElement cav=driver.findElement(By.xpath("//button[@class='text-white  hover:ring-4 font-medium rounded-lg text-base inline-flex items-center px-3 py-2.5 text-center mr-2 bg-blue-600 hover:ring-blue-300 ']"));
 				cav.click();
