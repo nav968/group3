@@ -6,15 +6,20 @@ import org.testng.annotations.Test;
 
 import pageobjects.DashboardPage;
 import pageobjects.LoginPage;
+import pageobjects.VisitLogsPage;
 
 public class DashboardTest extends TestBase {
 	LoginPage LP;
 	DashboardPage DBP;
+	VisitLogsPage VLP;
+	
+    
 
 	@Test
 	public void addcontactperson() throws Exception {
 		LP= new LoginPage(driver);
 		DBP = new DashboardPage(driver);
+		VLP = new VisitLogsPage(driver);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		LP.enterUsername(prop.getProperty("uname"));
 		LP.enterPassword(prop.getProperty("password"));

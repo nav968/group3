@@ -123,6 +123,7 @@ public class DashboardPage {
 				Thread.sleep(1000);
 				driver.findElement(By.xpath("//h3[text()=\"Updated Successfully\"]//parent::div//button")).click();
 			}
+		
 			
 }
 
