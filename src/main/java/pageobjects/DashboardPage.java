@@ -21,6 +21,8 @@ public class DashboardPage {
 	// addnewvisit button click
 	
 			public void addNewVisit() {
+				
+				
 				WebElement visit = driver.findElement(By.xpath("//h1[text()='Add New Visit']"));
 				visit.click();
 				}
