@@ -60,6 +60,7 @@ public class VisitLogsPage {
 		WebElement cancel = driver.findElement(By.xpath("/html/body/div[1]/div/div[8]/div/div/div[2]/div[3]/div[2]/button[2]"));
 		cancel.click();
 	}
+	
 
 
 

@@ -29,8 +29,6 @@ public class VisitLogsTest extends TestBase {
 		VLP.statusdropdown("Completed");
 		VLP.submitfollowup();
 		VLP.cancelbutton();
-		
-		
 	}
 	
 
