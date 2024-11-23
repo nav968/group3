@@ -61,6 +61,8 @@ public class VisitLogsPage {
 		cancel.click();
 	}
 	
+	
+	
 
 
 
