@@ -8,7 +8,9 @@ package testcases;
 	import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.chrome.ChromeDriver;
 	import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 	public class TestBase {
@@ -21,7 +23,7 @@ import org.testng.annotations.BeforeTest;
 			prop.load(fileinp);
 
 		}
-	@BeforeClass
+	@BeforeMethod
 		public void basesetup() throws IOException {
 			
 		readprop();
@@ -37,8 +39,12 @@ import org.testng.annotations.BeforeTest;
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
 		
-		}
-
+		
+	}
+@AfterMethod
+public void TearDown() {
+	driver.quit();
+}
 	}
 
 
