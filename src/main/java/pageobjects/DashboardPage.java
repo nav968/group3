@@ -21,6 +21,8 @@ public class DashboardPage {
 	// addnewvisit button click
 	
 			public void addNewVisit() {
+				
+				
 				WebElement visit = driver.findElement(By.xpath("//h1[text()='Add New Visit']"));
 				visit.click();
 				}
@@ -126,10 +128,11 @@ public class DashboardPage {
 			public void contactPersonclose() throws InterruptedException
 			{
 				Thread.sleep(1000);
-				driver.findElement(By.xpath("//h3[text()=\"Updated Successfully\"]//parent::div//button")).click();
+				driver.findElement(By.xpath("/html/body/div/div/div/main/div[8]/div/div[2]/button")).click();
 			}
 			//close add visit 
 			public void closeAddvisit() throws InterruptedException {
+				//thread
 				Thread.sleep(1000);
 				WebElement cav=driver.findElement(By.xpath("//button[@class='text-white  hover:ring-4 font-medium rounded-lg text-base inline-flex items-center px-3 py-2.5 text-center mr-2 bg-blue-600 hover:ring-blue-300 ']"));
 				cav.click();
