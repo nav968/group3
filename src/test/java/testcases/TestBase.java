@@ -34,6 +34,7 @@ import org.testng.annotations.BeforeTest;
 			driver = new FirefoxDriver();
 		}
 		
+		
 		driver.get(prop.getProperty("url"));
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
