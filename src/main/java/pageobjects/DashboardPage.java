@@ -12,6 +12,12 @@ public class DashboardPage {
 		
 		this.driver = driver;
 	}
+	//get current url
+	public String getdashboardpageurl() throws Exception {
+		Thread.sleep(3000);
+		String url = driver.getCurrentUrl();
+		return url;
+	}
 	// addnewvisit button click
 	
 			public void addNewVisit() {
@@ -63,6 +69,63 @@ public class DashboardPage {
 				WebElement sub = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/div[9]/div/div/div[3]/button[1]"));
 				sub.click();
 			}
+			public void addEmp(String employee) throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement emp = driver.findElement(By.xpath("//div[@class=' css-19bb58m']//input[@id='react-select-9-input']"));
+			emp.click();
+				emp.sendKeys(employee);
+				emp.sendKeys(Keys.RETURN);
+			}
+			
+			public void addDate(String date) throws InterruptedException {	
+				//System.out.println("done...");
+				Thread.sleep(1000); 
+				WebElement da=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[4]/div/input"));
+				//WebElement da=driver.findElement(By.xpath("//input[@type='datetime-local']//input[@value='2024-12-26T20:05']"));
+			da.click();
+			
+			da.sendKeys(date);	
+				//Select dropdown=new Select(da);
+				//dropdown.selectByVisibleText("15-11-2024 50:00");
+				//da.sendKeys(date);	
+				da.sendKeys(Keys.RETURN);
+			}
+			public void purpose(String purpose) throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement dat=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[5]/div/input"));
+				//WebElement dat=driver.findElement(By.xpath("//input[@id='purpose']//input[@value='quality check']"));
+				dat.click();
+				
+				dat.sendKeys(purpose);
+			}
+			public void contact(String person) throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement cont = driver.findElement(By.xpath("//div[@class=' css-19bb58m']//input[@id='react-select-10-input']"));
+			cont.click();
+				cont.sendKeys(person);
+				cont.sendKeys(Keys.RETURN);	
+			}
+			public void addNote(String notes) throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement note=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[7]/div/input"));
+				//WebElement note = driver.findElement(By.xpath("//input[@id='additionalNotes']//input[@placeholder='Adding Note']"));
+			note.click();
+				note.sendKeys(notes);	
+			}
+			public void submit() throws InterruptedException {
+				Thread.sleep(1000);
+				WebElement adc=driver.findElement(By.xpath("/html/body/div/div/div/main/div[4]/div/div/div[11]/button[1]"));
+				adc.click();
+				
+			}
+			public void contactPersonclose() throws InterruptedException
+			{
+				Thread.sleep(1000);
+				driver.findElement(By.xpath("//h3[text()=\"Updated Successfully\"]//parent::div//button")).click();
+			}
+		
+			
+			
 			
 }
 
