@@ -24,8 +24,16 @@ public class DashboardTest extends TestBase {
 		DBP.addContactPerson();
 		DBP.nameField(prop.getProperty("name"));
 		DBP.designation(prop.getProperty("designation"));
-		DBP.email(prop.getProperty("mailid"));
+		DBP.email(prop.getProperty("mail"));
 		DBP.phone(prop.getProperty("number"));
 		DBP.submitbutton();
+		DBP.contactPersonclose();
+	DBP.addEmp(prop.getProperty("employee"));
+		DBP.addDate("15-11-2024 14:50");
+		DBP.purpose(prop.getProperty("purpose"));
+		DBP.contact("Dev R (contract)");
+		DBP.addNote("testing");
+		DBP.submit();
+		DBP.closeAddvisit();
 		}
 }
