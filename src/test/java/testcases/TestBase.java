@@ -22,6 +22,7 @@ import org.testng.annotations.BeforeMethod;
 
 		}
 	@BeforeMethod
+	
 		public void basesetup() throws IOException {
 			
 		readprop();
