@@ -22,9 +22,9 @@ public class DashboardTest extends TestBase {
 		DBP.addNewVisit();
 		DBP.instiDropDown(prop.getProperty("options"));
 		DBP.addContactPerson();
-		DBP.nameField("JOHN DOEEEzy");
+		DBP.nameField("ARON DOEEEzy");
 		DBP.designation(prop.getProperty("designation"));
-		DBP.email("johnwickz23@gmail.com");
+		DBP.email("aron23@gmail.com");
 		DBP.phone(prop.getProperty("number"));
 		DBP.submitbutton();
 		DBP.contactPersonclose();
